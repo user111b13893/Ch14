@@ -8,11 +8,9 @@ public class Ex04 {
             FileReader fileReader = new FileReader("donkey.txt");
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream("donkey.txt"), "UTF-8"));
 
-            int charCount = 0;
             int intVal;
 
             while ((intVal = bufferedReader.read()) != -1) {
-                charCount++;
                 System.out.print((char) intVal);
             }
 
